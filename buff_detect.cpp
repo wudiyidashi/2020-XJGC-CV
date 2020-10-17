@@ -1,10 +1,8 @@
 #include "buff_detect.hpp"
 
-#define DEBUG_BUFF_DETECT
+//#define DEBUG_BUFF_DETECT
 bool BuffDetector::DetectBuff(Mat& img, OtherParam other_param)
 {
-
-    GaussianBlur(img, img, Size(3,3),0);
     // **预处理** -图像进行相应颜色的二值化
     points_2d.clear();
     vector<cv::Mat> bgr;
